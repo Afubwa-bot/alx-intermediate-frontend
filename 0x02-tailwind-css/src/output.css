@@ -1,4 +1,7 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
 .flex {
   display: flex;
 }
@@ -16,6 +19,9 @@
 }
 .w-2\/3 {
   width: calc(2/3 * 100%);
+}
+.w-full {
+  width: 100%;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -37,6 +43,9 @@
 }
 .justify-center {
   justify-content: center;
+}
+.object-cover {
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   main {
