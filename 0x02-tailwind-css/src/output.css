@@ -26,6 +26,9 @@
 .justify-between {
   justify-content: space-between;
 }
+.justify-center {
+  justify-content: center;
+}
 @media (max-width: 768px) {
   main {
     grid-template-columns: 1fr;
