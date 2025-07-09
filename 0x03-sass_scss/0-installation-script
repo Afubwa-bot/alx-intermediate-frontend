@@ -1,0 +1,44 @@
+# step 1 ; Navigate to the project directory
+cd 0x03 -sass_scss
+
+# step 2 ; Install sass using npm
+npm install sass
+
+# Install Node.js (if you haven't already):
+SASS requires Node.js to run. If you don't have Node.js installed, download and install it from the official website: https://nodejs.org/. This installation will also include npm. You can verify the installation by opening your terminal or command prompt and typing:
+
+node -v
+npm -v
+
+This should display the installed versions of Node.js and npm.
+
+# Open your Terminal or Command Prompt:
+Navigate to the directory where you want to install SASS, or simply open your terminal/command prompt from any location if you intend to install it globally.
+
+# Install SASS globally (recommended for general use):
+To install SASS so it's accessible from any project on your system, use the following command:
+
+npm install -g sass
+
+npm: The Node Package Manager command.
+
+install: The command to install a package.
+
+-g: This flag stands for "global," meaning the package will be installed in a central location on your system, making the sass command available everywhere.
+
+sass: The name of the SASS package.
+
+# Verify the SASS installation:
+After the installation completes, you can verify that SASS is correctly installed by checking its version:
+
+sass --version
+
+This command should output the installed SASS version, confirming a successful installation.
+
+Alternative: Install SASS locally (for a specific project):
+
+If you prefer to install SASS as a dependency for a specific project, navigate to your project's root directory in the terminal and use:
+
+npm install sass --save-dev
+
+--save-dev: This flag adds SASS as a "development dependency" to your project's package.json file. This means it's needed for development but not necessarily for the final production build. When installed locally, you would typically run SASS commands via npm scripts defined in package.json (e.g., npm run compile-sass) rather than directly using sass in the terminal.
